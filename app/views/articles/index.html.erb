@@ -1,0 +1,9 @@
+<ul>
+  <% @articles.each do |article| %>
+    <li><%= link_to article.title, article_path(article) %></li>
+  <% end %>
+</ul>
+
+<button type="button" class="btn btn-dark">
+  <%= link_to "Add a new article", "/articles/new" %>
+</button>
